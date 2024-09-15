@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/b6326efff6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <img src="image/logof3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Assalamu Alaikum,<br> I'm Nazmuz <span>Saif</span>  <br> From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+    <!---------about--------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto mollitia voluptatum laudantium eum dicta culpa cupiditate expedita ex porro sapiente illum cum quo voluptatem obcaecati, excepturi ad modi perspiciatis. Magni, impedit ut voluptates nisi quidem recusandae facere quibusdam minus nobis omnis nesciunt esse ab, ipsa quo dignissimos? Odio, adipisci eligendi! </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem Solving</span><br>Expert in C Language</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>Full Stack Devloper</span><br>Front-end and the Back-end Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-current</span><br>Learning New Skill</li>
+                            <li><span>2023-2023</span><br>Working at Daraz BD</li>
+                            <li><span>2020-2023</span><br>Teacher at XYZ </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>1st year 1st semester</span><br>Bachelor of Science in CSE<br>University of Asia Pacific</li>
+                            <li><span>2021</span><br>Higher Secondary Certificate (HSC)<br>Islamia Government College</li>
+                            <li><span>2019</span><br>Secondary School Certificate (SSC)<br>B.L Government High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-gears"></i>
+                    <h2>Software Devlopment</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius hic porro sunt ex tempore temporibus sit laudantium, consectetur modi cupiditate quis nemo culpa, qui saepe?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius hic porro sunt ex tempore temporibus sit laudantium, consectetur modi cupiditate quis nemo culpa, qui saepe?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius hic porro sunt ex tempore temporibus sit laudantium, consectetur modi cupiditate quis nemo culpa, qui saepe?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eum sapiente quasi? Consequuntur, ea rem!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eum sapiente quasi? Consequuntur, ea rem!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eum sapiente quasi? Consequuntur, ea rem!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------contact------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> nazmuzsaif4080@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 01300352801</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nazmuz.saif/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/shuvro__29_11/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nazmuzsaif/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Nazmuz-Saif" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="image/Saif Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 - Nazmuz Saif.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyA5LR4jTChYYttgSQoT3v2ew3tFYV8JgVu5eBxyiEsHJ2X3HzlcDdfYuIEdN3tNL_avw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
